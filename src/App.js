@@ -5,9 +5,6 @@ import Error from "./components/Error";
 import Navigation from "./components/Navigation";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
-  const mainPageStyles = {
-    marginTop: "55px",
-  };
   return (
     <Router>
       <div className="container-fluid">
@@ -15,7 +12,7 @@ function App() {
           <Navigation />
         </div>
 
-        <div className="row" style={mainPageStyles}>
+        <div className="row">
           <Routes>
             <Route index element={<Landing></Landing>} />
             <Route path="*" element={<Error></Error>} />

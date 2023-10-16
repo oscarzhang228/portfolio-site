@@ -31,19 +31,40 @@ code {
   text-decoration: none;
   color: gray;
 }
-
-@media screen and (max-width: 575px) {
-  .navbarLink {
-    text-align: center;
-    font-size: 20px;
-  }
-}
-
 .navbarHeading:hover,
 .navbarLink:hover {
   scale: 1.1;
 }
-
 .navbarHeading {
   transition: 300ms;
+}
+.navContainer {
+  height: 80px;
+  position: absolute;
+}
+
+/* Phones and small tablets */
+@media screen and (max-width: 575px) {
+  .navbarLink {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+/* Mostly computers and up. Bootstrap large*/
+@media screen and (min-width: 991px) {
+  .navbar {
+    border-bottom: 1px solid black;
+    transform: translateY(-100%);
+    transition: 800ms;
+  }
+  .navContainer:hover .navbar {
+    transform: translateY(0);
+    transition: 500ms;
+  }
+}
+@media screen and (min-width: 575px) {
+  .navbarIcon {
+    display: none;
+  }
 }

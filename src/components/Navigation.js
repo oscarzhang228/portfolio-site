@@ -16,55 +16,75 @@ function Navigation() {
 
   const navTextStyle = {
     fontSize: "20px",
-    transition: "500ms",
   };
   return (
-    <Navbar
-      collapseOnSelect
-      expand="sm"
-      fixed="top"
-      className="border-bottom py-0 px-2"
-      bg="light"
-      variant="light"
-      style={navTextStyle}
-    >
-      <Navbar.Brand className="headingText navbarHeading">
-        <Link to="/" className="navbarLink" style={navHeadingStyle}>
-          Oscar Zhang
-        </Link>
-      </Navbar.Brand>
-
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="me-auto" />
-        <Nav>
-          <NavLink to="/" className="bodyText navbarLink" style={navLinkStyle}>
-            Home
-          </NavLink>
-          <NavLink
-            to="/about"
-            className="bodyText navbarLink"
-            style={navLinkStyle}
-          >
-            About
-          </NavLink>
-          <NavLink
-            to="/projects"
-            className="bodyText navbarLink"
-            style={navLinkStyle}
-          >
-            Projects
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className="bodyText navbarLink"
-            style={navLinkStyle}
-          >
-            Contact
-          </NavLink>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <div className="navContainer border">
+      <Navbar
+        collapseOnSelect
+        expand="sm"
+        fixed="top"
+        className="navbar py-0 px-3"
+        bg="light"
+        variant="light"
+        style={navTextStyle}
+      >
+        <Navbar.Brand className="headingText navbarHeading">
+          <Link to="/" className="navbarLink" style={navHeadingStyle}>
+            Oscar Zhang
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav">
+          <div className="d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto" />
+          <Nav>
+            <NavLink
+              to="/"
+              className="bodyText navbarLink"
+              style={navLinkStyle}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              className="bodyText navbarLink"
+              style={navLinkStyle}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/projects"
+              className="bodyText navbarLink"
+              style={navLinkStyle}
+            >
+              Projects
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className="bodyText navbarLink"
+              style={navLinkStyle}
+            >
+              Contact
+            </NavLink>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </div>
   );
 }
 
