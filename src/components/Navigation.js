@@ -18,7 +18,7 @@ function Navigation() {
     fontSize: "20px",
   };
   return (
-    <div className="navContainer border">
+    <div className="navContainer p-0">
       <Navbar
         collapseOnSelect
         expand="sm"

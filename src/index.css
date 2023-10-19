@@ -43,6 +43,13 @@ code {
   position: absolute;
 }
 
+.heroLeft {
+  height: 100vh;
+  background-color: #161618;
+  color: #f4f3f2;
+  font-size: 100px;
+}
+
 /* Phones and small tablets */
 @media screen and (max-width: 575px) {
   .navbarLink {
@@ -55,8 +62,9 @@ code {
 @media screen and (min-width: 991px) {
   .navbar {
     border-bottom: 1px solid black;
-    transform: translateY(-100%);
+    transform: translateY(-110%);
     transition: 800ms;
+    height: 7%;
   }
   .navContainer:hover .navbar {
     transform: translateY(0);
