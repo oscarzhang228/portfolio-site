@@ -19,7 +19,6 @@ code {
 
 .headingText {
   font-family: "DM Serif Display", serif;
-  font-size: 24px;
   font-weight: 200;
 }
 
@@ -27,6 +26,9 @@ code {
   font-family: "Inter Tight", sans-serif;
 }
 
+.navbar {
+  border-bottom: 1px solid black;
+}
 .navbarLink {
   text-decoration: none;
   color: gray;
@@ -47,9 +49,40 @@ code {
   height: 100vh;
   background-color: #161618;
   color: #f4f3f2;
-  font-size: 100px;
+  font-size: 50px;
 }
 
+.heroText span {
+  text-shadow: 3px 3px 2px rgba(112, 63, 63, 1);
+  display: inline-block;
+  transition: transform 250ms;
+}
+.heroDev:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: linear-gradient(to bottom right, #72ffb6, #10d164);
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+}
+.heroPic {
+  object-fit: cover;
+  width: 100%;
+  height: 80vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* When it turns into one section instead of two */
+@media screen and (max-width: 767px) {
+  .heroRight {
+    display: none;
+  }
+}
 /* Phones and small tablets */
 @media screen and (max-width: 575px) {
   .navbarLink {
@@ -58,17 +91,23 @@ code {
     margin-bottom: 20px;
   }
 }
+
 /* Mostly computers and up. Bootstrap large*/
 @media screen and (min-width: 991px) {
-  .navbar {
-    border-bottom: 1px solid black;
-    transform: translateY(-110%);
-    transition: 800ms;
-    height: 7%;
+}
+@media screen and (min-width: 768px) {
+  .heroText span:hover {
+    transform: translateY(-5px);
+    transition: transform 250ms;
   }
-  .navContainer:hover .navbar {
-    transform: translateY(0);
-    transition: 500ms;
+  .heroDev:hover:after {
+    width: 100%;
+    left: 0;
+    background: linear-gradient(to bottom right, #72ffb6, #10d164);
+  }
+  .heroPic:hover {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
   }
 }
 @media screen and (min-width: 575px) {
