@@ -12,6 +12,19 @@ code {
     monospace;
 }
 
+.blueGrad {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(90, 92, 106) 0%,
+    rgb(32, 45, 58) 81.3%
+  );
+}
+
+.fullSize {
+  width: 100vw;
+  height: 100vh;
+}
+
 .fill {
   width: 100%;
   height: 100%;
@@ -26,6 +39,7 @@ code {
   font-family: "Inter Tight", sans-serif;
 }
 
+/* Nav */
 .navbar {
   border-bottom: 1px solid black;
 }
@@ -45,13 +59,13 @@ code {
   position: absolute;
 }
 
+/* Hero */
 .heroLeft {
   height: 100vh;
   background-color: #161618;
   color: #f4f3f2;
   font-size: 50px;
 }
-
 .heroText span {
   text-shadow: 3px 3px 2px rgba(112, 63, 63, 1);
   display: inline-block;
@@ -70,13 +84,34 @@ code {
   -webkit-transition: width 0.2s ease;
 }
 .heroPic {
-  object-fit: cover;
+  object-fit: contain;
+  height: 100vh;
   width: 100%;
-  height: 80vh;
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
+.experiencePic {
+  object-fit: contain;
+  max-height: 100vh;
+  width: 100%;
+}
+
+.socialIcon {
+  transition: 200ms;
+}
+.socialIcon:hover {
+  transform: translateY(-5px);
+  transition: 200ms;
+}
+.heroText span:hover {
+  transform: translateY(-5px);
+  transition: transform 250ms;
+}
+.heroDev:hover:after {
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to bottom right, #72ffb6, #10d164);
+}
 /* When it turns into one section instead of two */
 @media screen and (max-width: 767px) {
   .heroRight {
@@ -96,19 +131,6 @@ code {
 @media screen and (min-width: 991px) {
 }
 @media screen and (min-width: 768px) {
-  .heroText span:hover {
-    transform: translateY(-5px);
-    transition: transform 250ms;
-  }
-  .heroDev:hover:after {
-    width: 100%;
-    left: 0;
-    background: linear-gradient(to bottom right, #72ffb6, #10d164);
-  }
-  .heroPic:hover {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
 }
 @media screen and (min-width: 575px) {
   .navbarIcon {

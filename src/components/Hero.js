@@ -1,9 +1,10 @@
 import HalfScreen from "./HalfScreen";
-import { Parallax } from "react-scroll-parallax";
+import { SocialIcon } from "react-social-icons";
+
 import heroPic from "../images/heroPic2.png";
 function Hero() {
   const heroLeft = (
-    <div className="heroLeft d-flex flex-column justify-content-center p-5 pt-0 align-items-center ">
+    <div className="heroLeft d-flex flex-column justify-content-center p-5 pt-0 align-items-center">
       <h1 className="headingText heroText text-center">Hi, I'm Oscar Zhang</h1>
       <p className="headingText heroText text-center">
         <span>A</span> <span>F</span>
@@ -18,23 +19,40 @@ function Hero() {
         <span className="heroDev">Developer</span>
       </p>
       <h1 className="heroText headingText text-center">And Web Designer</h1>
+
+      <div className="d-flex gap-5 mt-5">
+        <SocialIcon
+          className="socialIcon"
+          url="mailto:oscarzhang228@gmail.com"
+          target="_blank"
+        />
+
+        <SocialIcon
+          className="socialIcon"
+          url="https://www.github.com/oscarzhang228"
+          target="_blank"
+        />
+
+        <SocialIcon
+          className="socialIcon"
+          url="https://www.linkedin.com/in/oscarzhang228"
+          target="_blank"
+        />
+      </div>
     </div>
   );
 
   const heroRight = (
-    <div className="heroRight fill pt-5">
-      <Parallax translateY={[0, 5]} className="d-flex fill align-items-center">
-        <img src={heroPic} className="fill heroPic"></img>
-      </Parallax>
+    <div className="heroRight">
+      <img src={heroPic} className="fill heroPic" alt="Oscar Zhang"></img>
     </div>
   );
   return (
-    <div className="ps-1 container-fluid">
-      <div className="row py-0">
+    <div className="ps-1 container-fluid fill">
+      <div className="row py-0 fill">
         <HalfScreen element={heroLeft} />
         <HalfScreen element={heroRight} />
       </div>
-      <div style={{ height: "100vh" }}>hello</div>
     </div>
   );
 }
