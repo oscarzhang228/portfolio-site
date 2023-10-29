@@ -1,6 +1,10 @@
 import HalfScreen from "../HalfScreen";
 import Timeline from "./Timeline";
 import { SkillCard } from "./SkillCard";
+import JSLogo from "../../images/JavaScript-logo.png";
+import CSSLogo from "../../images/css-logo.png";
+import SQLLogo from "../../images/sql-logo.png";
+import AWSLogo from "../../images/aws-logo.png";
 const About = () => {
   return (
     <div className="fill container-fluid p-0 m-0 about">
@@ -8,8 +12,57 @@ const About = () => {
         <HalfScreen element={aboutElem} />
         <HalfScreen element={<Timeline />} />
       </div>
-      <div className="row mt-5">
-        <SkillCard header="JavaScript" />
+      <div className="row mt-5 gap-1">
+        <SkillCard
+          header="Web"
+          image={JSLogo}
+          body={
+            <p className="bodyText">
+              -React.js <br />
+              -Node.js <br />
+              -TypeScript <br />
+              -Express.js <br />
+            </p>
+          }
+        />
+        <SkillCard
+          header="CSS"
+          image={CSSLogo}
+          body={
+            <p className="bodyText">
+              -Bootstrap <br />
+              -SASS/SCSS <br />
+              -Material UI <br />
+              -Tailwind.css <br />
+            </p>
+          }
+        />
+        <SkillCard
+          header="Databases"
+          image={SQLLogo}
+          body={
+            <p className="bodyText">
+              -MongoDB <br />
+              -AWS DynamoDB <br />
+              -AWS RDS <br />
+              -SQL Server <br />
+            </p>
+          }
+        />
+        <SkillCard
+          header="Other"
+          image={AWSLogo}
+          body={
+            <p className="bodyText">
+              -AWS <br />
+              -Docker <br />
+              -Jira <br />
+              -Git/GitHub <br />
+              -Linux <br />
+              -Bash <br />
+            </p>
+          }
+        />
       </div>
     </div>
   );

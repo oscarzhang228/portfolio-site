@@ -24,7 +24,7 @@ const Timeline = () => {
             Sandy Springs, GA
           </h5>
           <p>
-            Front-End (React), Cloud (AWS), NoSQL Database(DynamoDB), GitHub,
+            Front-End (React), Cloud (AWS), NoSQL Database (DynamoDB), GitHub,
             Bash, SEO, Visual Design, Project Management, Collaboration
           </p>
         </VerticalTimelineElement>
