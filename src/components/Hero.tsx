@@ -1,6 +1,6 @@
 import HalfScreen from "./HalfScreen";
 import { SocialIcon } from "react-social-icons";
-
+import { Link } from "react-router-dom";
 import heroPic from "../images/heroPic2.png";
 function Hero() {
   const heroLeft = (
@@ -16,7 +16,9 @@ function Hero() {
         <span>c</span>
         <span>k</span>
         &nbsp;
-        <span className="heroDev">Developer</span>
+        <Link to="/projects">
+          <span className="heroDev">Developer</span>
+        </Link>
       </p>
       <h1 className="heroText headingText text-center">And Web Designer</h1>
 
@@ -44,7 +46,7 @@ function Hero() {
 
   const heroRight = (
     <div className="heroRight">
-      <img src={heroPic} className="fill heroPic" alt="Oscar Zhang"></img>
+      <img src={heroPic} className=" heroPic" alt="Oscar Zhang"></img>
     </div>
   );
   return (

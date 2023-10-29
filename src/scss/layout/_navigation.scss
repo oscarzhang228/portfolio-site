@@ -1,0 +1,20 @@
+.navbar {
+  border-bottom: 1px solid black;
+}
+.navbarLink {
+  text-decoration: none;
+  color: #232d3f;
+  transition: 200ms;
+}
+.navbarHeading:hover,
+.navbarLink:hover {
+  scale: 1.1;
+  transition: 200ms;
+}
+.navbarHeading {
+  transition: 300ms;
+}
+.navContainer {
+  height: 80px;
+  position: absolute;
+}

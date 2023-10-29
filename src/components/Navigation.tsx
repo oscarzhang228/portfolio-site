@@ -2,9 +2,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink, Link } from "react-router-dom";
 function Navigation() {
-  const navLinkStyle = ({ isActive }) => {
+  const navLinkStyle = ({ isActive }: { isActive: boolean }) => {
     return {
-      color: isActive ? "black" : "gray",
+      color: isActive ? "#DC143C" : "#232D3F",
       marginRight: "10px",
     };
   };
@@ -23,7 +23,7 @@ function Navigation() {
         collapseOnSelect
         expand="sm"
         fixed="top"
-        className="navbar py-0 px-3"
+        className="navbar border-bottom py-0 px-3"
         bg="light"
         variant="light"
         style={navTextStyle}
@@ -50,7 +50,7 @@ function Navigation() {
             </svg>
           </div>
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="responsive-navbar-nav" role={"collapse"}>
           <Nav className="me-auto" />
           <Nav>
             <NavLink

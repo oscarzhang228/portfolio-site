@@ -1,0 +1,58 @@
+@use "../abstracts" as *;
+
+.heroLeft {
+  height: 100vh;
+  background-color: $black;
+  color: $white;
+  font-size: 50px;
+}
+
+.heroText span {
+  text-shadow: 3px 3px 2px rgba(112, 63, 63, 1);
+  display: inline-block;
+  color: $white;
+  transition: transform 250ms;
+}
+
+.heroDev:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: linear-gradient(to bottom right, #72ffb6, #10d164);
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+}
+.heroPic {
+  @extend %fullH;
+  object-fit: contain;
+  width: 100%;
+  transform: scaleX(-1);
+}
+
+.heroDev:hover:after {
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to bottom right, #72ffb6, #10d164);
+}
+.heroText span:hover {
+  transform: translateY(-5px);
+  transition: transform 250ms;
+}
+
+.socialIcon {
+  transition: 200ms;
+}
+.socialIcon:hover {
+  transform: translateY(-5px);
+  transition: 200ms;
+}
+
+.experiencePic {
+  object-fit: contain;
+  max-height: 100vh;
+  width: 100%;
+}
