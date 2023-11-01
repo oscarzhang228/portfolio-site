@@ -17,16 +17,15 @@ This repository hosts the source code for my personal portfolio website. The pur
 
 Features<br>
 Responsive design for optimal viewing across various devices.<br>
-Sections for About Me, Projects, and Contact Information.<br>
-Display of notable projects with descriptions and links.<br>
+Sections for About, Projects, and Contact Information.<br>
+Display of notable projects with links.<br>
 Contact form to allow visitors to reach out.<br>
 
 Technologies<br>
+React.js<br>
+TypeScript<br>
 HTML<br>
 CSS (with SASS for preprocessing)<br>
-JavaScript<br>
-React.js<br>
-Node.js<br>
 Bootstrap<br>
 Git (for version control)<br>
 
