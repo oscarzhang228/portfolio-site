@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+.contact {
+  background: $black;
+  color: $white;
+}
+
+.contactHeader {
+  font-size: 60px;
+}
