@@ -1,6 +1,7 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink, Link } from "react-router-dom";
+import { useState } from "react";
 function Navigation() {
   const navLinkStyle = ({ isActive }: { isActive: boolean }) => {
     return {
@@ -8,6 +9,7 @@ function Navigation() {
       marginRight: "10px",
     };
   };
+  const [expanded, setExpanded] = useState<any>(false);
 
   const navHeadingStyle = {
     color: "black",
@@ -21,12 +23,12 @@ function Navigation() {
   return (
     <div className="navContainer p-0">
       <Navbar
-        collapseOnSelect
         expand="sm"
         fixed="top"
         className="navbar border-bottom py-0 px-2"
         bg="light"
         variant="light"
+        expanded={expanded}
         style={navTextStyle}
       >
         <Navbar.Brand className="headingText navbarHeading">
@@ -34,7 +36,10 @@ function Navigation() {
             Oscar Zhang
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav">
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => setExpanded(expanded ? false : "expanded")}
+        >
           <div className="d-flex align-items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -58,6 +63,11 @@ function Navigation() {
               to="/"
               className="bodyText navbarLink"
               style={navLinkStyle}
+              onClick={() =>
+                setTimeout(() => {
+                  setExpanded(false);
+                }, 150)
+              }
             >
               Home
             </NavLink>
@@ -65,6 +75,11 @@ function Navigation() {
               to="/about"
               className="bodyText navbarLink"
               style={navLinkStyle}
+              onClick={() =>
+                setTimeout(() => {
+                  setExpanded(false);
+                }, 150)
+              }
             >
               About
             </NavLink>
@@ -72,6 +87,11 @@ function Navigation() {
               to="/projects"
               className="bodyText navbarLink"
               style={navLinkStyle}
+              onClick={() =>
+                setTimeout(() => {
+                  setExpanded(false);
+                }, 150)
+              }
             >
               Projects
             </NavLink>
@@ -79,6 +99,11 @@ function Navigation() {
               to="/contact"
               className="bodyText navbarLink"
               style={navLinkStyle}
+              onClick={() =>
+                setTimeout(() => {
+                  setExpanded(false);
+                }, 150)
+              }
             >
               Contact
             </NavLink>
