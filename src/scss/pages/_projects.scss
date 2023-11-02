@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+.projects {
+  background-color: $black;
+}
+
+.projectTable {
+  font-family: $body-font;
+  letter-spacing: 1px;
+}
+
+.techUsed {
+  margin-right: 5px;
+}
+
+.latProj {
+  color: $white;
+}
+
+.carousel-item {
+  text-align: center;
+  float: none;
+}

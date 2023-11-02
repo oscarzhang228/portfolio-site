@@ -14,14 +14,14 @@ const About = () => {
       </div>
       <div className="row mt-5 gap-1">
         <SkillCard
-          header="Web"
+          header="JavaScript"
           image={JSLogo}
           body={
-            <p className="bodyText">
-              -React.js <br />
-              -Node.js <br />
-              -TypeScript <br />
-              -Express.js <br />
+            <p className="bodyText text-center">
+              React.js <br />
+              Node.js <br />
+              TypeScript <br />
+              Express.js <br />
             </p>
           }
         />
@@ -29,11 +29,11 @@ const About = () => {
           header="CSS"
           image={CSSLogo}
           body={
-            <p className="bodyText">
-              -Bootstrap <br />
-              -SASS/SCSS <br />
-              -Material UI <br />
-              -Tailwind.css <br />
+            <p className="bodyText text-center">
+              Bootstrap <br />
+              SASS/SCSS <br />
+              Material UI <br />
+              Tailwind.css <br />
             </p>
           }
         />
@@ -41,11 +41,11 @@ const About = () => {
           header="Databases"
           image={SQLLogo}
           body={
-            <p className="bodyText">
-              -MongoDB <br />
-              -AWS DynamoDB <br />
-              -AWS RDS <br />
-              -SQL Server <br />
+            <p className="bodyText text-center">
+              MongoDB <br />
+              AWS DynamoDB <br />
+              AWS RDS <br />
+              SQL Server <br />
             </p>
           }
         />
@@ -53,13 +53,11 @@ const About = () => {
           header="Other"
           image={AWSLogo}
           body={
-            <p className="bodyText">
-              -AWS <br />
-              -Docker <br />
-              -Jira <br />
-              -Git/GitHub <br />
-              -Linux <br />
-              -Bash <br />
+            <p className="bodyText text-center">
+              AWS <br />
+              Docker <br />
+              Jira <br />
+              Git/GitHub <br />
             </p>
           }
         />

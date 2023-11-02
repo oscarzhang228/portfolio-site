@@ -27,7 +27,7 @@
   -webkit-transition: width 0.2s ease;
 }
 .heroPic {
-  @extend %fullH;
+  height: 95vh;
   object-fit: contain;
   width: 100%;
   transform: scaleX(-1);
@@ -41,6 +41,10 @@
 .heroText span:hover {
   transform: translateY(-5px);
   transition: transform 250ms;
+}
+
+.heroRight {
+  height: 95vh;
 }
 
 .socialIcon {

@@ -4,6 +4,7 @@ import Error from "./components/Error";
 import Navigation from "./components/Navigation";
 import About from "./components/about/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Projects } from "./components/Projects";
 function App() {
   return (
     <Router>
@@ -15,7 +16,7 @@ function App() {
         <div className="row">
           <Routes>
             <Route index element={<Landing />} />
-            <Route path="/projects" element={<div></div>} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<Error />} />
           </Routes>

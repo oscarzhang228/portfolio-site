@@ -45,8 +45,10 @@ function Hero() {
   );
 
   const heroRight = (
-    <div className="heroRight">
-      <img src={heroPic} className=" heroPic" alt="Oscar Zhang"></img>
+    <div className="heroRight pt-lg-1">
+      <div className="mt-2">
+        <img src={heroPic} className="heroPic" alt="Oscar Zhang"></img>
+      </div>
     </div>
   );
   return (
