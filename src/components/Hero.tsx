@@ -52,7 +52,7 @@ function Hero() {
     </div>
   );
   return (
-    <div className="ps-1 container-fluid fill">
+    <div className=" container-fluid fill">
       <div className="row py-0 fill">
         <HalfScreen element={heroLeft} />
         <HalfScreen element={heroRight} />

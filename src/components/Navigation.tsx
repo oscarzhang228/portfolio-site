@@ -16,6 +16,7 @@ function Navigation() {
 
   const navTextStyle = {
     fontSize: "20px",
+    width: "100vw",
   };
   return (
     <div className="navContainer p-0">
@@ -23,7 +24,7 @@ function Navigation() {
         collapseOnSelect
         expand="sm"
         fixed="top"
-        className="navbar border-bottom py-0 px-3"
+        className="navbar border-bottom py-0 px-2"
         bg="light"
         variant="light"
         style={navTextStyle}
