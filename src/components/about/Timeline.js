@@ -8,10 +8,10 @@ import { BiFoodMenu } from "react-icons/bi";
 
 const Timeline = () => {
   return (
-    <div className="d-flex justify-content-end align-items-center fullHeight ">
+    <div className="d-flex justify-content-end align-items-center full-height ">
       <VerticalTimeline className="mt-5 me-3 m-0 " layout="1-column-right">
         <VerticalTimelineElement
-          className="vertical-timeline-element-- mt-5 bodyText"
+          className="vertical-timeline-element-- mt-5 body-text"
           date="August 2023 - present"
           iconStyle={iconStyle}
           icon={<RiComputerLine />}

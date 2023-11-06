@@ -1,5 +1,5 @@
 @use "../abstracts" as *;
-.about {
+.about-container {
   background: linear-gradient(
     109.6deg,
     rgb(36, 45, 57) 11.2%,
@@ -8,7 +8,7 @@
   );
 }
 
-.leftSide {
+.left-side {
   color: $white;
   text-shadow: 1px 1px 2px black;
 }

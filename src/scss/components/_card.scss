@@ -1,5 +1,5 @@
 @use "../abstracts" as *;
-.skillCard {
+.skill-card {
   user-select: none;
   max-width: 300px;
   margin: 5rem auto;
@@ -24,14 +24,14 @@
     flex-direction: column;
     width: 90%;
     padding: 1rem;
-    .tokenImage {
+    .token-image {
       border-radius: 0.5rem;
       max-width: 100%;
       height: 250px;
       object-fit: contain;
     }
 
-    .tokenInfo {
+    .token-info {
       display: flex;
       justify-content: space-between;
       align-items: center;

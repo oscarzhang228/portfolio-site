@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 import heroPic from "../images/heroPic2.png";
 function Hero() {
   const heroLeft = (
-    <div className="heroLeft d-flex flex-column justify-content-center p-5 pt-0 align-items-center">
-      <h1 className="headingText heroText text-center">Hi, I'm Oscar Zhang</h1>
-      <p className="headingText heroText text-center">
+    <div className="hero-left d-flex flex-column justify-content-center p-5 pt-0 align-items-center">
+      <h1 className="heading-text hero-text text-center">
+        Hi, I'm Oscar Zhang
+      </h1>
+      <p className="heading-text hero-text text-center">
         <span>A</span> <span>F</span>
         <span>u</span>
         <span>l</span>
@@ -17,26 +19,26 @@ function Hero() {
         <span>k</span>
         &nbsp;
         <Link to="/projects">
-          <span className="heroDev">Developer</span>
+          <span className="hero-dev">Developer</span>
         </Link>
       </p>
-      <h1 className="heroText headingText text-center">And Web Designer</h1>
+      <h1 className="hero-text heading-text text-center">And Web Designer</h1>
 
       <div className="d-flex gap-5 mt-5">
         <SocialIcon
-          className="socialIcon"
+          className="social-icon"
           url="mailto:oscarzhang228@gmail.com"
           target="_blank"
         />
 
         <SocialIcon
-          className="socialIcon"
+          className="social-icon"
           url="https://www.github.com/oscarzhang228"
           target="_blank"
         />
 
         <SocialIcon
-          className="socialIcon"
+          className="social-icon"
           url="https://www.linkedin.com/in/oscarzhang228"
           target="_blank"
         />
@@ -45,14 +47,14 @@ function Hero() {
   );
 
   const heroRight = (
-    <div className="heroRight pt-lg-1">
+    <div className="hero-right pt-lg-1">
       <div className="mt-2">
-        <img src={heroPic} className="heroPic" alt="Oscar Zhang"></img>
+        <img src={heroPic} className="hero-pic" alt="Oscar Zhang"></img>
       </div>
     </div>
   );
   return (
-    <div className=" container-fluid fill">
+    <div className="container-fluid fill">
       <div className="row py-0 fill">
         <HalfScreen element={heroLeft} />
         <HalfScreen element={heroRight} />

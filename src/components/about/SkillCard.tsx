@@ -10,10 +10,10 @@ export const SkillCard = ({
   body: ReactElement;
 }) => {
   return (
-    <div className="skillCard col-sm-8 col-md-5 col-lg-4 d-flex justify-content-center">
+    <div className="skill-card col-sm-8 col-md-5 col-lg-4 d-flex justify-content-center">
       <div className="main">
-        <img className="tokenImage" src={image} alt="Javascript" />
-        <h2 className="headingText mb-0 text-center mt-3">{header}</h2>
+        <img className="token-image" src={image} alt="Javascript" />
+        <h2 className="heading-text mb-0 text-center mt-3">{header}</h2>
         {body}
       </div>
     </div>

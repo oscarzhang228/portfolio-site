@@ -7,7 +7,7 @@ import SQLLogo from "../../images/sql-logo.png";
 import AWSLogo from "../../images/aws-logo.png";
 const About = () => {
   return (
-    <div className="fill container-fluid p-0 m-0 about">
+    <div className="fill container-fluid p-0 m-0 about-container">
       <div className="row m-0">
         <HalfScreen element={aboutElem} />
         <HalfScreen element={<Timeline />} />
@@ -17,7 +17,7 @@ const About = () => {
           header="JavaScript"
           image={JSLogo}
           body={
-            <p className="bodyText text-center">
+            <p className="body-text text-center">
               React.js <br />
               Node.js <br />
               TypeScript <br />
@@ -29,7 +29,7 @@ const About = () => {
           header="CSS"
           image={CSSLogo}
           body={
-            <p className="bodyText text-center">
+            <p className="body-text text-center">
               Bootstrap <br />
               SASS/SCSS <br />
               Material UI <br />
@@ -41,7 +41,7 @@ const About = () => {
           header="Databases"
           image={SQLLogo}
           body={
-            <p className="bodyText text-center">
+            <p className="body-text text-center">
               MongoDB <br />
               AWS DynamoDB <br />
               AWS RDS <br />
@@ -53,7 +53,7 @@ const About = () => {
           header="Other"
           image={AWSLogo}
           body={
-            <p className="bodyText text-center">
+            <p className="body-text text-center">
               AWS <br />
               Docker <br />
               Jira <br />
@@ -74,15 +74,15 @@ const pStyle = {
   fontWeight: "400",
 };
 const aboutElem = (
-  <div className="d-flex flex-column justify-content-center align-items-center  fullHeight mt-5 px-3 leftSide">
-    <h1 className="headingText mt-5">About Me</h1>
-    <h5 className="bodyText text-center" style={subheaderStyle}>
+  <div className="d-flex flex-column justify-content-center align-items-center full-height mt-5 px-3 left-side">
+    <h1 className="heading-text mt-5">About Me</h1>
+    <h5 className="body-text text-center" style={subheaderStyle}>
       Aspiring Full-Stack Developer / Software Engineer
     </h5>
-    <p className="bodyText p-2 text-center" style={pStyle}>
+    <p className="body-text p-2 text-center" style={pStyle}>
       <em>I build highly-scalable and adaptive technologies for the web.</em>
     </p>
-    <p className="bodyText p-2 text-center">
+    <p className="body-text p-2 text-center">
       With a strong foundation in web development and an enduring passion for
       creating exceptional user experiences, I've embarked on a journey that
       commenced in 2020 when I first delved into the world of coding with my
