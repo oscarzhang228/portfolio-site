@@ -1,18 +1,18 @@
 @use "../abstracts/" as *;
-.projects {
+.projects-container {
   background-color: $black;
 }
 
-.projectTable {
+.project-table {
   font-family: $body-font;
   letter-spacing: 1px;
 }
 
-.techUsed {
+.tech-used {
   margin-right: 5px;
 }
 
-.latProj {
+.latest-project {
   color: $white;
 }
 

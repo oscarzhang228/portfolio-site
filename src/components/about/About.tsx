@@ -7,7 +7,7 @@ import SQLLogo from "../../images/sql-logo.png";
 import AWSLogo from "../../images/aws-logo.png";
 const About = () => {
   return (
-    <div className="fill container-fluid p-0 m-0 about-container">
+    <div className="fill container-fluid p-0 px-2 m-0 about-container">
       <div className="row m-0">
         <HalfScreen element={aboutElem} />
         <HalfScreen element={<Timeline />} />

@@ -6,7 +6,7 @@ import Carousel from "react-bootstrap/Carousel";
 export const ProjectShowcase = () => {
   return (
     <div className="d-flex flex-column mt-5">
-      <h1 className="headingText latProj text-center">
+      <h1 className="heading-text latest-project text-center">
         Latest Project: Skyview Manager Portal
       </h1>
       <Carousel interval={5000}>

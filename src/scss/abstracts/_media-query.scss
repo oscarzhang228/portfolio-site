@@ -1,14 +1,14 @@
 @media screen and (max-width: 767px) {
-  .heroRight {
+  .hero-right {
     display: none;
   }
-  .heroLeft {
+  .hero-left {
     width: 100vw;
   }
 }
 
 @media screen and (max-width: 575px) {
-  .navbarLink {
+  .navbar-link {
     text-align: center;
     font-size: 20px;
     margin-bottom: 20px;
@@ -16,7 +16,7 @@
 }
 
 @media screen and (min-width: 575px) {
-  .navbarIcon {
+  .navbar-icon {
     display: none;
   }
 }

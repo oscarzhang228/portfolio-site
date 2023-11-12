@@ -5,16 +5,16 @@ import { ProjectShowcase } from "./ProjectShowcase";
 
 export const Projects = () => {
   return (
-    <div className="projects mt-5">
+    <div className="projects-container mt-5">
       <ProjectShowcase />
-      <h1 className="headingText latProj mt-5">Project Archive</h1>
-      <Table hover variant="dark" className=" projectTable" responsive="md">
+      <h1 className="heading-text latest-project mt-5">Project Archive</h1>
+      <Table hover variant="dark" className="project-table" responsive="md">
         <thead>
           <tr>
             <th>Created</th>
             <th>Project</th>
             <th>Technology</th>
-            <th>Made at</th>
+            <th>For</th>
             <th>Link</th>
           </tr>
         </thead>
@@ -23,26 +23,26 @@ export const Projects = () => {
             <td>2023</td>
             <td>Portfolio Site</td>
             <td className="">
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 React
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 TypeScript
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 SASS
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 Bootstrap
               </Badge>
-              <Badge className="techUsed" pill bg="black">
+              <Badge className="tech-used" pill bg="black">
                 Figma
               </Badge>
             </td>
             <td>Personal</td>
             <td>
               <SocialIcon
-                className="socialIcon"
+                className="social-icon"
                 style={iconStyle}
                 url="https://github.com/oscarzhang228/portfolio-site/"
                 target="_blank"
@@ -53,19 +53,19 @@ export const Projects = () => {
             <td>2023</td>
             <td>Skyview Portal</td>
             <td>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 React
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 TypeScript
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 SASS
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 Bootstrap
               </Badge>
-              <Badge className="techUsed" pill bg="primary">
+              <Badge className="tech-used" pill bg="primary">
                 AWS Services
               </Badge>
             </td>
@@ -73,7 +73,7 @@ export const Projects = () => {
             <td>
               <SocialIcon
                 style={iconStyle}
-                className="socialIcon"
+                className="social-icon"
                 url="https://www.fyvebyhub.com"
                 target="_blank"
               />
@@ -83,26 +83,26 @@ export const Projects = () => {
             <td>2023</td>
             <td>Mini Message Board</td>
             <td>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 React
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 Node
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 Express
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 Bootstrap
               </Badge>
-              <Badge className="techUsed" pill bg="primary">
+              <Badge className="tech-used" pill bg="primary">
                 MongoDB
               </Badge>
             </td>
             <td>Personal</td>
             <td>
               <SocialIcon
-                className="socialIcon"
+                className="social-icon"
                 style={iconStyle}
                 url="https://github.com/oscarzhang228/miniMessageBoard"
                 target="_blank"
@@ -113,26 +113,26 @@ export const Projects = () => {
             <td>2023</td>
             <td>Inventory Manager</td>
             <td>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 React
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 Node
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 Express
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 Bootstrap
               </Badge>
-              <Badge className="techUsed" pill bg="primary">
+              <Badge className="tech-used" pill bg="primary">
                 MongoDB
               </Badge>
             </td>
             <td>Personal</td>
             <td>
               <SocialIcon
-                className="socialIcon"
+                className="social-icon"
                 style={iconStyle}
                 url="https://github.com/oscarzhang228/InventoryManager"
                 target="_blank"
@@ -143,13 +143,13 @@ export const Projects = () => {
             <td>2022</td>
             <td>AASA Website</td>
             <td>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 WordPress
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 HTML
               </Badge>
-              <Badge className="techUsed" pill bg="success">
+              <Badge className="tech-used" pill bg="success">
                 CSS
               </Badge>
             </td>
@@ -157,7 +157,7 @@ export const Projects = () => {
             <td>
               <SocialIcon
                 style={iconStyle}
-                className="socialIcon"
+                className="social-icon"
                 url="https://aasa.gatech.edu/"
                 target="_blank"
               />

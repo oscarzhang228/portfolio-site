@@ -21,7 +21,7 @@ function Navigation() {
     width: "100vw",
   };
   return (
-    <div className="navContainer p-0">
+    <div className="navbar-container p-0">
       <Navbar
         expand="sm"
         fixed="top"
@@ -31,8 +31,8 @@ function Navigation() {
         expanded={expanded}
         style={navTextStyle}
       >
-        <Navbar.Brand className="headingText navbarHeading">
-          <Link to="/" className="navbarLink" style={navHeadingStyle}>
+        <Navbar.Brand className="heading-text navbar-heading">
+          <Link to="/" className="navbar-link" style={navHeadingStyle}>
             Oscar Zhang
           </Link>
         </Navbar.Brand>
@@ -61,7 +61,7 @@ function Navigation() {
           <Nav>
             <NavLink
               to="/"
-              className="bodyText navbarLink"
+              className="body-text navbar-link"
               style={navLinkStyle}
               onClick={() =>
                 setTimeout(() => {
@@ -73,7 +73,7 @@ function Navigation() {
             </NavLink>
             <NavLink
               to="/about"
-              className="bodyText navbarLink"
+              className="body-text navbar-link"
               style={navLinkStyle}
               onClick={() =>
                 setTimeout(() => {
@@ -85,7 +85,7 @@ function Navigation() {
             </NavLink>
             <NavLink
               to="/projects"
-              className="bodyText navbarLink"
+              className="body-text navbar-link"
               style={navLinkStyle}
               onClick={() =>
                 setTimeout(() => {
@@ -97,7 +97,7 @@ function Navigation() {
             </NavLink>
             <NavLink
               to="/contact"
-              className="bodyText navbarLink"
+              className="body-text navbar-link"
               style={navLinkStyle}
               onClick={() =>
                 setTimeout(() => {
