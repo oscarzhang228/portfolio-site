@@ -5,11 +5,11 @@ import heroPic from "../images/heroPic2.png";
 function Hero() {
   const heroLeft = (
     <div className="hero-left d-flex flex-column justify-content-center p-5 pt-0 align-items-center">
-      <h1 className="heading-text hero-text text-center">
+      <h1 className="heading-text hero-text text-center mt-5">
         Hi, I'm Oscar Zhang
       </h1>
       <p className="heading-text hero-text text-center">
-        <span>A</span> <span>F</span>
+        {/* <span>A</span> <span>F</span>
         <span>u</span>
         <span>l</span>
         <span>l</span>-<span>S</span>
@@ -17,12 +17,15 @@ function Hero() {
         <span>a</span>
         <span>c</span>
         <span>k</span>
-        &nbsp;
+        &nbsp; */}
+        A&nbsp;
         <Link to="/projects">
-          <span className="hero-dev">Developer</span>
+          <span className="hero-dev">Software Engineer</span>
         </Link>
       </p>
-      <h1 className="hero-text heading-text text-center">And Web Designer</h1>
+      <h1 className="hero-text heading-text text-center">
+        With a Focus on Full-Stack Development
+      </h1>
 
       <div className="d-flex gap-5 mt-5">
         <SocialIcon

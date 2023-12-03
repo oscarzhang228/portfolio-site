@@ -77,7 +77,7 @@ const aboutElem = (
   <div className="d-flex flex-column justify-content-center align-items-center full-height mt-5 px-3 left-side">
     <h1 className="heading-text mt-5">About Me</h1>
     <h5 className="body-text text-center" style={subheaderStyle}>
-      Aspiring Full-Stack Developer / Software Engineer
+      Aspiring Software Engineer
     </h5>
     <p className="body-text p-2 text-center" style={pStyle}>
       <em>I build highly-scalable and adaptive technologies for the web.</em>

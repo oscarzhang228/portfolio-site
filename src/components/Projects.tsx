@@ -21,6 +21,29 @@ export const Projects = () => {
         <tbody>
           <tr>
             <td>2023</td>
+            <td>Fyve By Internal Client Manager</td>
+            <td className="">
+              <Badge className="tech-used" pill bg="success">
+                React
+              </Badge>
+              <Badge className="tech-used" pill bg="success">
+                TypeScript
+              </Badge>
+              <Badge className="tech-used" pill bg="success">
+                SASS
+              </Badge>
+              <Badge className="tech-used" pill bg="success">
+                Bootstrap
+              </Badge>
+              <Badge className="tech-used" pill bg="primary">
+                AWS Services
+              </Badge>
+            </td>
+            <td>Fyve By</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2023</td>
             <td>Portfolio Site</td>
             <td className="">
               <Badge className="tech-used" pill bg="success">

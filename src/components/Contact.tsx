@@ -14,7 +14,7 @@ export const Contact = () => {
                 <Card.Img className="rounded" src={contactPic}></Card.Img>
                 <Card.Title className="mt-2">Oscar Zhang</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
-                  Front-end Developer Intern at Fyve By
+                  Software Engineer Intern at Fyve By
                 </Card.Subtitle>
                 <Card.Text>
                   Contact me at my email or socials linked below for any
